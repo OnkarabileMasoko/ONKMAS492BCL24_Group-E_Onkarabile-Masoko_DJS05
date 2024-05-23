@@ -25,3 +25,12 @@ class Store {
   // Create the Store
   const store = new Store(tallyReducer, 0);
   
+  // Subscribe to Changes
+  const unsubscribe = store.subscribe((newState) => {
+    console.log("State updated:", newState);
+  });
+
+  // Subscribe to Changes
+  const unsubscribe = store.subscribe((newState) => {
+    console.log("State updated:", newState);
+  });
